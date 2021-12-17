@@ -9,34 +9,31 @@
     <title>Jud&aacute;'s Portfolio (Bootstrap)</title>
   </head>
   <!-- <h1>Jud&aacute;'s Portfolio (Bootstrap)</h1> -->
-
+<body data-bs-spy="scroll" data-bs-target="navbarScroll" data-bs-offset="0" tabindex="0">
   <div class="container"> <!-- CONTAINER >>>> -->
     
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-4">
+    <nav id="navbarScroll" class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Jud&aacute; Teixeira</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0 gap-2 navbar-nav-scroll menu-desktop" style="--bs-scroll-height: 100px;">
-            <li class="nav-item"><a href="#main">Home</a></li>
-            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav .fs-1 ms-auto my-2 my-lg-0 gap-2 navbar-nav-scroll menu-desktop" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a class="nav-link" href="#main">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="main row mx-2 my-5 px-5 py-5" id="main"> <!-- MAIN >>>> -->
-      <div class="content content1 row mt-5 mb-2">
-        <div class="col-1"><!-- empty --></div>
+      <div class="content content1 row mt-5 mb-2 mx-4">
         <h1 class="col-10">I'm Jud&aacute; <br>Glad to see you!</h1>
-        <div class="col-1"><!-- empty --></div>
       </div>
-      <div class="content content2 row">
-        <div class="col-1"><!-- empty --></div>
+      <div class="content content2 row mx-4">
         <p class="col-10">
           I'm a software developer! I can help you 
           build a product, feature or website Look 
@@ -45,17 +42,13 @@
           have a project you need coded, don't 
           hesitate to contact me.
         </p>
-        <div class="col-1"><!-- empty --></div>
       </div>
 
-      <div class="socials mb-3 mt-3">
+      <div class="row socials mb-3 mt-3 mx-4">
         <div class="row">
-          <div class="col-1"><!-- empty --></div>
           <h2 class="col-10">LET'S CONNECT</h2>
-          <div class="col-1"><!-- empty --></div>
         </div>
         <div class="row">
-          <div class="col-1"><!-- empty --></div>
           <ul class="icon-bar col-10">
             <li><a href="#" class="px-1"><img src="images/twitter.png" alt="Twitter"></a></li>
             <li><a href="#" class="px-1"><img src="images/linkedin.png" alt="Linkedin"></a></li>
@@ -63,36 +56,202 @@
             <li><a href="#" class="px-1"><img src="images/github.png" alt="Github"></a></li>
             <li><a href="#" class="px-1"><img src="images/instagram.png" alt="Instagram"></a></li>
           </ul>
-          <div class="col-1"><!-- empty --></div>
         </div>
       </div>
     </div> <!-- <<<< END OF MAIN -->
-
+    
     <div class="portfolio" id="portfolio"> <!-- PORTFOLIO >>>> -->
-      <div class="card mx-5 px-4 py-4">
-        <div class="row">
-          <div class="col-6"><img class="card-img" src="images/pic1.png" alt=""></div>
-          <div class="col-6 card-text">
-            <h2 class="row">Tonic</h2>
-            <h3 class="row">CANOPY • Back End Dev • 2015</h3>
+
+
+      <div class="row mt-5 mb-5 px-4 py-4 card card1"> <!-- CARD 1 >>>> -->
+        <div class="row card-content">
+          <div class="col-6 px-3">
+            <img class="card-img" src="images/pic1.png" alt="">
+          </div>
+          <div class="col-5 px-5 py-4 card-text">
+            <h2 class="row fw-bolder">Tonic</h2>
+            <p class="row">CANOPY • Back End Dev • 2015</p>
             <p class="row">A daily selection of privately personalized reads; 
               no accounts or sign-ups required</p>
-            <ul class="keyword row">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
+            <div class="keyword row">
+              <span class="col-auto badge bg-secondary m-1">html</span>
+              <span class="col-auto badge bg-secondary m-1">css</span>
+              <span class="col-auto badge bg-secondary m-1">javaScript</span>
+            </div>
+            <button type="button" class="row my-3 btn btn-outline-primary">See Project</button>
+          </div>
         </div>
-      </div>
+      </div> <!-- <<<< End of CARD 1 -->
+
+      <div class="row mt-5 mb-5 px-4 py-4 card card2"> <!-- CARD 2 >>>> -->
+        <div class="row card-content">
+          <div class="col-5 px-5 py-4 card-text">
+            <h2 class="row fw-bolder">Multi-Post Stories</h2>
+            <p class="row">FACEBOOK • Full Stack Dev • 2015</p>
+            <p class="row">Experimental content creation feature 
+              that allows users to add to an existing story over 
+              the course of a day without spamming their friends.</p>
+            <div class="keyword row">
+              <span class="col-auto badge bg-secondary m-1">html</span>
+              <span class="col-auto badge bg-secondary m-1">css</span>
+              <span class="col-auto badge bg-secondary m-1">javaScript</span>
+            </div>
+            <button type="button" class="row my-3 btn btn-outline-primary">See Project</button>
+          </div>
+          <div class="col-6 px-3 ms-auto ">
+            <img class="card-img" src="images/pic2.png" alt="">
+          </div>
+        </div>
+      </div> <!-- <<<< End of CARD 2 -->
+
+      <div class="row mt-5 mb-5 px-4 py-4 card card3"> <!-- CARD 3 >>>> -->
+        <div class="row">
+          <div class="col-6 px-3"><img class="card-img" src="images/pic3.png" alt=""></div>
+          <div class="col-5 px-5 py-4 card-text">
+            <h2 class="row fw-bolder">Facebook 360</h2>
+            <p class="row">FACEBOOK • Full Stack Dev • 2015</p>
+            <p class="row">A daily selection of privately personalized reads; 
+              no accounts or sign-ups required</p>
+            <div class="keyword row">
+              <span class="col-auto badge bg-secondary m-1">html</span>
+              <span class="col-auto badge bg-secondary m-1">css</span>
+              <span class="col-auto badge bg-secondary m-1">javaScript</span>
+            </div>
+            <button type="button" class="row my-3 btn btn-outline-primary">See Project</button>
+            </div>
+        </div>
+      </div> <!-- <<<< End of CARD 3 -->
+
+      <div class="row mt-5 mb-5 px-4 py-4 card card4"> <!-- CARD 4 >>>> -->
+        <div class="row">
+          <div class="col-5 px-5 py-4 card-text">
+            <h2 class="row fw-bolder">Multi-Post Stories</h2>
+            <p class="row">FACEBOOK • Full Stack Dev • 2015</p>
+            <p class="row">Exploring the future of media in Facebook's 
+              first Virtual Reality app; a place to discover and enjoy 
+              360 photos and videos on Gear VR.</p>
+            <div class="keyword row">
+              <span class="col-auto badge bg-secondary m-1">html</span>
+              <span class="col-auto badge bg-secondary m-1">Ruby on Rails</span>
+              <span class="col-auto badge bg-secondary m-1">css</span>
+              <span class="col-auto badge bg-secondary m-1">javaScript</span>
+            </div>
+            <button type="button" class="row my-3 btn btn-outline-primary">See Project</button>
+        </div>
+        <div class="col-6 px-3 ms-auto "><img class="card-img" src="images/pic4.png" alt=""></div>
+      </div> <!-- <<<< End of CARD 4 -->
+
     </div> <!-- <<<< END OF PORTFOLIO -->
 
     
 
-    <div class="about" id="about"> <!-- ABOUT >>>> -->
-      
+    <div class="row mx-2 my-5 px-5 py-5 about" id="about"> <!-- ABOUT >>>> -->
+      <div class="about1 col-5 mx-1"> <!-- about1 -->
+      <div class="content content1 row mt-5 mb-2">
+        <h1 class="col-10">About <br>Myself</h1>
+      </div>
+      <div class="content content2 row">
+        <p class="col-10">
+          Hello! I'm a software developer! I can help you 
+          build a product, feature or website Look 
+          through some of my work and 
+          experience! If you like what you see and 
+          have a project you need coded, don't 
+          hesitate to contact me.
+        </p>
+      </div>
+      <div class="socials mb-3 mt-3">
+        <div class="row">
+          <h2 class="col-10">LET'S CONNECT</h2>
+        </div>
+        <div class="row ">
+          <ul class="icon-bar col-10">
+            <li><a href="#" class="px-1"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" class="px-1"><img src="images/linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="#" class="px-1"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" class="px-1"><img src="images/github.png" alt="Github"></a></li>
+            <li><a href="#" class="px-1"><img src="images/instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+        <button type="button" class="row my-2 ms-1 btn btn-outline-primary">Get My Resume</button>
+      </div>
+      </div> <!-- end of about1 -->
+
+      <div class="about2 col-6 my-5" id="tech-menu"> <!-- about2 -->
+        <details>
+          <summary>Languages</summary>
+          <ul class="languages ms-auto ps-0">
+            <li>
+              <div class="img-container p-2 mx-1">
+                <img src="images/javascript.png" alt="">
+                <h3>JavaScript</h3>
+              </div>
+            </li>
+            <li>
+              <div class="img-container p-2 mx-1">
+                <img src="images/html5.png" alt="">
+                <h3>HTML</h3>
+              </div>
+            </li>
+            <li>
+              <div class="img-container p-2 mx-1">
+                <img src="images/css3.png" alt="">
+                <h3>CSS</h3>
+              </div>
+            </li>
+          </ul>
+        </details>
+        
+        <details>
+          <summary>Frameworks</summary>
+          <ul>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>AngularJS</li>
+            <li>Node.JS</li>
+            <li>jQuery</li>
+          </ul>
+        </details>
+        
+        <details>
+          <summary>Skills</summary>
+          <ul>
+            <li>Web architecture</li>
+            <li>Database systems</li>
+            <li>Graphic design</li>
+          </ul>
+        </details>
+      </div><!-- end of about2 -->
     </div> <!-- <<<< END OF ABOUT -->
 
-    <div class="contact" id="contact"> <!-- CONTACT >>>> -->
+    <div class="row contact p-5" id="contact"> <!-- CONTACT >>>> -->
+      <div class="col-7  d-flex flex-column justify-content-center my-5 py-5 contact-elements">
+        <div class="row content">
+          <h2 class="d-flex justify-content-center">Contact me</h2>
+          <p class="text-center">
+            If you have an application you are
+           interested in developing, a
+           feature that you need built or
+           a project that needs coding.
+          I’d love to help with it </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xwkykkjv" method="post">
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="name" required maxlength="30" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="mail">Email</label>
+            <input class="form-control" type="email" id="mail" name="email" required placeholder="youremail@mail.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" required maxlength="500" placeholder="Write your message here"></textarea>
+          </div>
+          <!-- <button type="button" class="row my-2 ms-1 btn btn-outline-primary">Get My Resume</button> -->
+          <button type="submit" id="submit" class="btn btn-outline-primary mb-3 cta-button">Get In Touch</button>
+        </form>
+      </div>
       
     </div> <!-- <<<< END OF CONTACT -->
 
@@ -100,4 +259,4 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
-<body>
+</body>
