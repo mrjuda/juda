@@ -3,32 +3,100 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Jud&aacute;'s Portfolio (Bootstrap)</title>
   </head>
-  <h1>Jud&aacute;'s Portfolio (Bootstrap)</h1>
+  <!-- <h1>Jud&aacute;'s Portfolio (Bootstrap)</h1> -->
 
-  <div class="container">
-    >>>>>
-    <p> >>>>> Stack the columns on mobile by making one full-width and the other half-width</p>
-  <div class="row">
-    <div class="col-md-8">.col-md-8</div>
-    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  </div>
->>>>>
-  <p> >>>>> Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop </p>
-  <div class="row">
-    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-  </div>
->>>>>
-  <p> >>>> Columns are always 50% wide, on mobile and desktop </p>
-  <div class="row">
-    <div class="col-6">.col-6</div>
-    <div class="col-6">.col-6</div>
-  </div>
-  </div>
+  <div class="container"> <!-- CONTAINER >>>> -->
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jud&aacute; Teixeira</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 gap-2 navbar-nav-scroll menu-desktop" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a href="#main">Home</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main row mx-2 my-5 px-5 py-5" id="main"> <!-- MAIN >>>> -->
+      <div class="content content1 row mt-5 mb-2">
+        <div class="col-1"><!-- empty --></div>
+        <h1 class="col-10">I'm Jud&aacute; <br>Glad to see you!</h1>
+        <div class="col-1"><!-- empty --></div>
+      </div>
+      <div class="content content2 row">
+        <div class="col-1"><!-- empty --></div>
+        <p class="col-10">
+          I'm a software developer! I can help you 
+          build a product, feature or website Look 
+          through some of my work and 
+          experience! If you like what you see and 
+          have a project you need coded, don't 
+          hesitate to contact me.
+        </p>
+        <div class="col-1"><!-- empty --></div>
+      </div>
+
+      <div class="socials mb-3 mt-3">
+        <div class="row">
+          <div class="col-1"><!-- empty --></div>
+          <h2 class="col-10">LET'S CONNECT</h2>
+          <div class="col-1"><!-- empty --></div>
+        </div>
+        <div class="row">
+          <div class="col-1"><!-- empty --></div>
+          <ul class="icon-bar col-10">
+            <li><a href="#" class="px-1"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" class="px-1"><img src="images/linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="#" class="px-1"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" class="px-1"><img src="images/github.png" alt="Github"></a></li>
+            <li><a href="#" class="px-1"><img src="images/instagram.png" alt="Instagram"></a></li>
+          </ul>
+          <div class="col-1"><!-- empty --></div>
+        </div>
+      </div>
+    </div> <!-- <<<< END OF MAIN -->
+
+    <div class="portfolio" id="portfolio"> <!-- PORTFOLIO >>>> -->
+      <div class="card mx-5 px-4 py-4">
+        <div class="row">
+          <div class="col-6"><img class="card-img" src="images/pic1.png" alt=""></div>
+          <div class="col-6 card-text">
+            <h2 class="row">Tonic</h2>
+            <h3 class="row">CANOPY • Back End Dev • 2015</h3>
+            <p class="row">A daily selection of privately personalized reads; 
+              no accounts or sign-ups required</p>
+            <ul class="keyword row">
+              <li>html</li>
+              <li>css</li>
+              <li>javaScript</li>
+            </ul>
+        </div>
+      </div>
+    </div> <!-- <<<< END OF PORTFOLIO -->
+
+    
+
+    <div class="about" id="about"> <!-- ABOUT >>>> -->
+      
+    </div> <!-- <<<< END OF ABOUT -->
+
+    <div class="contact" id="contact"> <!-- CONTACT >>>> -->
+      
+    </div> <!-- <<<< END OF CONTACT -->
+
+  </div>  <!-- <<<< END OF CONTAINER -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
